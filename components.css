@@ -1,0 +1,208 @@
+
+
+.blogpost {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5em;
+    padding: 2.5rem;
+}
+
+.blog-card {
+    background: #fff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+}
+
+.blog-card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+    border-bottom: 5px solid #000102;
+}
+
+.blog-card h3 {
+    font-size: 22px;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.blog-card p {
+    padding: 0 1rem 1.5rem;
+}
+
+.nested-card-wrapper {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 1rem;
+}
+
+.nested-card {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nested-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nested-card p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+}
+
+.btns button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.btns button:hover {
+    background-color: #0056b3;
+}
+
+.author {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.author img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+.author .details {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border-radius: 15px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.author .details p:first-of-type {
+    font-weight: bold;
+}
+
+.social-sharing {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1.5rem;
+}
+
+.social-sharing button {
+    display: flex;
+    align-items: center;
+    padding: 0.7em 1.5em;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-sharing button i {
+    margin-right: 0.5em;
+}
+
+.social-sharing button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.blog-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .blogpost {
+        padding: 1.5rem;
+    }
+
+    .blog-card {
+        padding: 0.5rem;
+    }
+
+    .blog-card h3 {
+        font-size: 18px;
+    }
+
+    .blog-card p {
+        padding: 0 0.5rem 1rem;
+    }
+
+    .nested-card-wrapper {
+        padding: 0.5rem;
+    }
+
+    .nested-card {
+        padding: 0.5rem;
+    }
+
+    .nested-card p {
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .author img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .author .details {
+        font-size: 16px;
+    }
+
+    .social-sharing button {
+        padding: 0.5em 1em;
+        font-size: 14px;
+    }
+
+    .blog-content h2 {
+        font-size: 20px;
+    }
+}
